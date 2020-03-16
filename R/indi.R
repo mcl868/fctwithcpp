@@ -1,4 +1,5 @@
-indi<-function(x,l,u){
-	do.call("indi",list(x=x,l=l,u=u))
+indi <- function(x, l, u) {
+    .Call('fctwithcpp_indi', PACKAGE = 'fctwithcpp', x, l, u)
 }
+
 
